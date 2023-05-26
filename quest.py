@@ -15,6 +15,7 @@ f = 0
 g = 0
 h = 0
 z = 0
+p = 0
 eastereggs = 0
 EE1 = False
 EE2 = False
@@ -34,10 +35,10 @@ input("You: Where am i? How did I end up here? Who am I? I don't remember anythi
 input('Unknown1: You came to my game to survive to pass all the tests!')
 input('What the hell is going on here?')
 input('You look around the room and see that there is a bed, a closet, a drawer, a door. What will you do?')
-print('Get under the bed     look in the closet     climb the drawer    open the door')
-while a!= 'Get under the bed' or 'look in the closet' or 'climb the drawer' or 'open the door':
+print('Get under the bed look in the closet climb the drawer open the door')
+while a!= 'Get under the bed' or 'look in the closet' or 'climb the drawer'  or'open the door':
     a = input()
-    if a == 'Get under the bed':
+    if a  =='Get under the bed':
         if EE1 == False:
             input('You got under the bed')
             input('Theres nothing here')
@@ -47,7 +48,7 @@ while a!= 'Get under the bed' or 'look in the closet' or 'climb the drawer' or '
         elif EE1 == True:
             input('Youve been here before, dude...')
             input('Farm Easter eggs is dirty..')
-    elif a == 'look in the closet':
+    elif a  =='look in the closet':
         input('You decided to look in the closet')
         input('It was buzzing strangely')
         input('You opened it')
@@ -56,9 +57,9 @@ while a!= 'Get under the bed' or 'look in the closet' or 'climb the drawer' or '
         input('Then you were pushed into it and you turned into mincemeat')
         input('Unknow2:FOOD IS SERVED')
         exit()
-        
 
-    elif a == 'climb the drawer':
+
+    elif a  =='climb the drawer':
         if key1 == False and lead1 == False:
             input('You looked in the drawer')
             input('You found the note and the key')
@@ -84,10 +85,10 @@ input("Well, well, well, You can't open the door!")
 input("What awaits me next?")
 input("You look around and ask: What to do?")
 input("Unknown1: This is a maze you have to get out of it.")
-input("          And how lucky you are there are surprises here!")
+input(" And how lucky you are there are surprises here!")
 input('You: God damn')
 input('Where will you go?')
-input('Forward    Left     Right    Back')
+input('Forward Left Right Back')
 while b!= 'Left' or 'Right' or 'Back' or 'Forward':
     b = input()
     if b == 'Left':
@@ -170,7 +171,7 @@ while b!= 'Left' or 'Right' or 'Back' or 'Forward':
                         if l!= 'hands on the clock' or 'стрелки на часах':
                             input('you are dead')
                         else:
-                            input('you correct')     
+                            input('you correct') 
                     input('It can talk, but it wont show anything for sure.')
                     z = time.time()
                     time.sleep(4)
@@ -197,16 +198,39 @@ while b!= 'Left' or 'Right' or 'Back' or 'Forward':
                             input('you correct')
                             input('then you saw some kind of door and knocked it down. There were some people and some professor there, not understanding how, but you realized that the professor was the one who conducted the tests on you')
                             input('you will want kill him')
-                            input('what you be going to do?')
+                            print('what you be going to do?')
+                            input('kill    call the police   sell it for organs')
+                            while p!= 'kill' or 'call the police' or 'sell it for organs':
+                                if p == 'kill':
+                                    input('you attacked him with a splinter that you found and killed him, but the police came and detained you because you killed a human')
+                                    print('you guitly')
+                                    print('bad ending')
+                                    exit()
+                                elif p == 'call the police':
+                                    input('You called the police and they came. Then the surveys began.')
+                                    if leads < 2:
+                                        input('The police didnt find enough evidence, so you were detained on false charges.')
+                                        print('you guitly')
+                                        print('dumb ending')
+                                        exit()
+                                    else:
+                                        input('The police found you innocent and arrested him')
+                                        print('good ending')
+                                        exit()
+                                elif p == 'sell it for organs':
+                                    input('You decided to sell him for organs. You became very rich but then the police came to you. She saw what you were doing.')
+                                    if leads < 2:
+                                        input('The police arrested you for the black market. You were executed.')
+                                        print('you dead')
+                                        print('worst ending')
+                                        exit()
+                                    else:
+                                        input('You showed a fake permit for this and the police believed you.')
+                                        print('THE BEST ending')
+                                        exit()
+                                    
                             
+
                 else:
                     input('You dialed the wrong code, but the door was opened for you. There was a room there. When you entered you were crushed.')
                     exit()
-                    
-
-                
-
-    
-                
-                
-
